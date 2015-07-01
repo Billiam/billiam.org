@@ -1,0 +1,70 @@
+# Site wide configuration
+
+title:            Fail Fast
+locale:           en_US
+url:              
+
+related_posts:
+  size: 0
+
+# Jekyll configuration
+
+permalink:   /:year/:month/:day/:title
+markdown:    redcarpet
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+redcarpet:
+  extensions: [autolink, footnotes, no_intra_emphasis, tables]
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+post:
+  template: _item_templates/_post.md
+  extension: md
+page:
+  template: _item_templates/_page.md
+  extension: md
+# Site owner
+owner:
+  name: Billiam
+  avatar: http://gravatar.com/avatar/1bfddef2f40f4bf20bfc2bec3b50dadc?s=150
+  bio: "\"Hey, sorry I haven't updated in a while. Life's been crazy, but I'll be back soon.\""
+  email: 
+  disqus-shortname: 
+  twitter: billiporter
+  facebook: #username
+  google:
+    plus: #username
+    analytics: UA-64674701-1
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: Billiam
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
