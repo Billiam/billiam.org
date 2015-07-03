@@ -5,6 +5,8 @@ date: 2015-06-30 17:17:14
 comments: false
 share: false
 tags: []
+image:
+  feature: post/2015/tm1638/tm1638-banner.jpg
 ---
 
 After some trial and error (_and error, and error, and error_), I've managed to get DiRT Rally telemetry data to
@@ -38,7 +40,18 @@ Install the Arduino software. Here is a helpful getting started guide: https://w
 
 Verify that you can upload sketches by uploading the blinky light Arduino example (see guide link).
 
-_ Connect the arduino to the led module using helpful guide. _
+You will need to connect arduino pins to the LED module. One for ground, one for power, and 3 to control it. If you plan to daisy chain multiple modules, you'll be using additional pins.
+
+Both the Arduino and the LED module pins are labeled on the PCB. Connect the Arduino 5v to the VCC input pin on the Arduino, connect ground to ground. I've wired Strobe 0, Clock and data to D3, D4 and D5 respectively.
+
+
+<figure>
+	<img src="{{site.url}}/images/post/2015/tm1638/wiring.jpg" alt="Figure displaying wiring arduino to TM1638 module" />
+	<figcaption>
+Wiring example from <a href="http://www.x-sim.de/forum/memberlist.php?mode=viewprofile&u=1437">Prodigy</a> in the x-sim forums.
+	</figcaption>
+</figure>
+
 
 If the TM1638 library was installed correctly, you should have a TM1638 menu in the Arduino app under `File > Examples`. Upload the `tm1638_one_module_example` sketch to verify that you can communicate with the led module. You may need to update the data, clock and strobe pins used, depending on how you wired them together.
 
