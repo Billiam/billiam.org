@@ -4,7 +4,7 @@ title: "The $15 shift light and DiRT Rally"
 date: 2015-07-02 11:10:14
 comments: false
 share: false
-tags: []
+tags: [arduino, python, DiRT Rally, tm1638]
 image:
   feature: post/2015/tm1638/tm1638-banner.jpg
 ---
@@ -46,7 +46,7 @@ Both the Arduino and the LED module pins are labeled on the PCB. Connect the Ard
 
 
 <figure>
-	<img src="{{site.url}}/images/post/2015/tm1638/wiring.jpg" alt="Figure displaying wiring arduino to TM1638 module" />
+	<img src="{{site.baseurl}}/images/post/2015/tm1638/wiring.jpg" alt="Figure displaying wiring arduino to TM1638 module" />
 	<figcaption>
 Wiring example from <a href="http://www.x-sim.de/forum/memberlist.php?mode=viewprofile&u=1437">Prodigy</a> in the x-sim forums.
 	</figcaption>

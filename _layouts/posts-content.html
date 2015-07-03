@@ -19,7 +19,7 @@
     {% if page.image.feature contains 'http' %}
       "{{ page.image.feature }}"
     {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
+      "{{ site.baseurl }}/images/{{ page.image.feature }}"
     {% endif %}
   alt="{{ page.title }} feature image">
   {% if page.image.credit %}
@@ -43,7 +43,7 @@
       {% if post.link %}
         <h1><a href="{{ post.link }}">{{ post.title }}</a></h1>
       {% else %}
-        <h1><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h1>
+        <h1><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h1>
       {% endif %}
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
@@ -66,10 +66,10 @@
 <div class="footer-wrap">
   {% if site.related_posts.size > 0 %}
   <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.baseurl }}/posts/">View all posts</a>)</small></h4>
     <ul>
     {% for post in site.related_posts limit:3 %}</html>
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
     <hr />
