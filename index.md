@@ -1,7 +1,7 @@
 ---
 layout: posts-content
-title: All Posts
-excerpt: "A List of Posts"
+title: 
+excerpt: "A developer blog using this one weird trick!"
 image:
   feature: coffee-banner.jpg
 ---
