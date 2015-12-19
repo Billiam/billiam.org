@@ -57,10 +57,13 @@ If the TM1638 library was installed correctly, you should have a TM1638 menu in 
 
 ### Software setup
 
-In your DiRT hardware configuration, `<Documents>\My Games\DiRT Rally\hardwaresettings\hardware_settings_config.xml`, set the motion element's `enabled` attribute to true and `extradata` to 3
+In your DiRT hardware configuration, `<Documents>\My Games\DiRT Rally\hardwaresettings\hardware_settings_config.xml`, set the motion_platform udp `enabled` attribute to true and `extradata` to 3
 
 ```xml
-<motion enabled="true" ip="127.0.0.1" port="20777" delay="1" extradata="3" />
+<motion_platform>
+  ...
+  <udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" /> 
+</motion_platform>
 ```
 
 Install [this sketch](https://raw.githubusercontent.com/Billiam/pygauge/master/arduino/tm1638-gauge.ino) on your Arduino. You may need to change the data, clock and strobe pin numbers, again depending on how you wired the led module up.
