@@ -311,7 +311,10 @@ $button-size: 1.5rem;
 	img {
 		width: 100%;
 		height: auto;
+		max-height: 250px;
 		-ms-interpolation-mode: bicubic;
+		object-fit: cover;
+		object-position: 100% 100%;
 	}
 	.headline-wrap {
 		position: absolute;

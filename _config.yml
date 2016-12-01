@@ -11,7 +11,7 @@ related_posts:
 
 permalink:   /:year/:month/:day/:title
 markdown:    redcarpet
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
