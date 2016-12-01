@@ -10,7 +10,7 @@ related_posts:
 # Jekyll configuration
 
 permalink:   /:year/:month/:day/:title
-markdown:    redcarpet
+markdown:    kramdown
 highlighter: rouge
 sass:
   sass_dir: _sass
