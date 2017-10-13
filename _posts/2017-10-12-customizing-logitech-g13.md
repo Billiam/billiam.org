@@ -19,8 +19,8 @@ Because of the shape of the joystick cone, it couldn't fit completely inside the
 Despite that, it lasted about 7 months under heavy use (enough to wear down the
 nubs on the cover) before falling off yesterday.
 
-![Worn joystick cap]({{ "/images/post/2017/g13/worn.jpg" | absolute_url }})
-![Upside-down joystick cap]({{ "/images/post/2017/g13/underside.jpg" | absolute_url }})
+[![Worn joystick cap]({{ "/images/post/2017/g13/worn.jpg" | absolute_url }})]({{ "/images/post/2017/g13/worn.jpg" | absolute_url }})
+[![Upside-down joystick cap]({{ "/images/post/2017/g13/underside.jpg" | absolute_url }})]({{ "/images/post/2017/g13/underside.jpg" | absolute_url }})
 
 Since I was out of sugru (and didn't want to wait another 24 hours for it to cure anyway), I decided to use thermoplastic (instamorph, polymorph, etc.) instead.
 
@@ -29,8 +29,8 @@ as mine was both glued, and too inflexible to pull off of plastic shaft without 
 
 Like the sugru, I filled a new cover with thermoplastic, pushed it onto the joystick, and used a small pokey tool ensure that the thermoplastic wrapped around the top of the joystick (now flat), and let it cool.
 
-![New joystick cover]({{ "/images/post/2017/g13/new.jpg" | absolute_url }})
+[![New joystick cover]({{ "/images/post/2017/g13/new.jpg" | absolute_url }})]({{ "/images/post/2017/g13/new.jpg" | absolute_url }})
 
 Here's the thermoplastic, having been molded to the inside of the cover.
-![New joystick cap without cover]({{ "/images/post/2017/g13/mold.jpg" | absolute_url }})
+[![New joystick cap without cover]({{ "/images/post/2017/g13/mold.jpg" | absolute_url }})]({{ "/images/post/2017/g13/mold.jpg" | absolute_url }})
 
