@@ -127,10 +127,19 @@ I masked off a stripe using thin vinyl tape, and airbrushed with Testor's airbru
 
 After painting, I sprayed on 4 or 5 layers of gloss coat, then sanded a bunch of it back out with 1200 grit sandpaper to remove dust, fuzz, and bugs, then sprayed again.
 
-TODO: Buff and polish
+Looks nice, but there's a lot of orange peel, and speckling from oversprayed clear coat.
+I did a very light scuff sand with 1200 grit in the worst areas, then buffed with rubbing compound followed by polishing compound.
+
+{% include figure.html url="images/post/2019/keypad/paint-polish.jpg" description="Case: After clearcoat, after sanding, after polishing" %}
 
 ## Assembly
 
 I added homing bumps by embedding 1.5mm ceramic bearings in the key caps. Shown in the picture is one hole, drilled slightly too large, and one a bit too small, with the bearing forced in (but no glue. Not sure whether the larger size would be better with glue, vs deforming the plastic somewhat to accomodate the bearing.
 
 {% include figure.html url="images/post/2019/keypad/tests-homing-bump.jpg" description="Key cap with embedded bearing" %}
+
+Once I'd run out of tasks to procrastinate with, I started on wiring, beginning with the key rows and columns. 
+
+I couldn't find any thinner gauge wire locally, and the only solid core wire I had was 22awg, which was just too hard to bend around the column offsets in the case, and to fit into small spaces between the case walls and the switch pins. Instead, I used 28awg stranded wire from a roll of ribbon cable, stripped it in sections with self-adjusting wire strippers, and then made and tinned small loops in the stripped sections. Thinner, solid wire would have been faster and less cumbersome.
+
+{% include figure.html url="images/post/2019/keypad/assembly-wiring.jpg" description="Key switches with columns and rows soldered up" %}
