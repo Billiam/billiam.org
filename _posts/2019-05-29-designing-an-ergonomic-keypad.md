@@ -143,3 +143,5 @@ Once I'd run out of tasks to procrastinate with, I started on wiring, beginning 
 I couldn't find any thinner gauge wire locally, and the only solid core wire I had was 22awg, which was just too hard to bend around the column offsets in the case, and to fit into small spaces between the case walls and the switch pins. Instead, I used 28awg stranded wire from a roll of ribbon cable, stripped it in sections with self-adjusting wire strippers, and then made and tinned small loops in the stripped sections. Thinner, solid wire would have been faster and less cumbersome.
 
 {% include figure.html url="images/post/2019/keypad/assembly-wiring.jpg" description="Key switches with columns and rows soldered up" %}
+
+{% include figure.html url="images/post/2019/keypad/assembly-wire-ribbons.jpg" description="Rows and columns connected to ribbon cable" %}
