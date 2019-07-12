@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Ergonomic gaming keypad: build log'
+title: 'Sherbet: an ergonomic gaming keypad'
 date: 2019-05-29 21:02:40
 excerpt: Designing, printing, and building a one-handed gaming keypad
 comments: false
@@ -145,3 +145,13 @@ I couldn't find any thinner gauge wire locally, and the only solid core wire I h
 {% include figure.html url="images/post/2019/keypad/assembly-wiring.jpg" description="Key switches with columns and rows soldered up" %}
 
 {% include figure.html url="images/post/2019/keypad/assembly-wire-ribbons.jpg" description="Rows and columns connected to ribbon cable" %}
+
+## Software
+
+I had initially planned to use [QMK](https://qmk.fm) as the keyboard firmware, using an as-yet [unmerged pull request designed to add joystick support](https://github.com/qmk/qmk_firmware/pull/4226). However, newer, ARM Teensy controllers (>=Teensy 3.2, Teensy LC) are not well supported by QMK. Though there are two example (single-key) keyboards which support ARM Teensys, only one is currently working. Additionally, the incoming patch does not yet support ARM controllers.
+
+When and if that patch is merged, and ARM support is implemented, I'll finish and release the QMK setup. In the mean time, I put together an Arduino sketch instead, starting from [somebody else's work here](https://forum.pjrc.com/threads/55395-Keyboard-simple-firmware).
+
+It has two modes, one with a standard QWERTY layout plus the joystick and a single joystick button, and the other where all of the keys are mapped to joystick buttons. This allows enough buttons to configure Steam's controller configurator, allowing the controller to be used as an XInput device with broader game support.
+
+{% gist ec4ccf967088edef36e67010839f3dd1 %}
