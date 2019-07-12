@@ -8,8 +8,10 @@ share: false
 tags: [3d-printing, keypad]
 ---
 
+Some time after it was discontinued, my [Logitech G13]('/2017/10/12/customizing-logitech-g13') stopped working and I decided to design a replacement, which I've named Sherbet.
 
-Some time after it was discontinued, my [Logitech G13]('/2017/10/12/customizing-logitech-g13') stopped working and I decided to design a replacement.
+Final results first
+{% include figure.html url="images/post/2019/keypad/assembly-complete-front.jpg" description="Sherbet keypad with joystick" %}
 
 ## Design
 
@@ -146,12 +148,24 @@ I couldn't find any thinner gauge wire locally, and the only solid core wire I h
 
 {% include figure.html url="images/post/2019/keypad/assembly-wire-ribbons.jpg" description="Rows and columns connected to ribbon cable" %}
 
-## Software
+{% include figure.html url="images/post/2019/keypad/wiring-complete.jpg" description="Wired rows, columns, joystick, and usb breakout to microcontroller" %}
 
-I had initially planned to use [QMK](https://qmk.fm) as the keyboard firmware, using an as-yet [unmerged pull request designed to add joystick support](https://github.com/qmk/qmk_firmware/pull/4226). However, newer, ARM Teensy controllers (>=Teensy 3.2, Teensy LC) are not well supported by QMK. Though there are two example (single-key) keyboards which support ARM Teensys, only one is currently working. Additionally, the incoming patch does not yet support ARM controllers.
+I designed the wrist rest to use two m4 screws, with heat-set inserts in the rest. These ended up slightly misaligned when I inserted them, so I can't attach it yet. I'm planning to reprint the rest with a slot cut through the bottom to hold an m4 nut instead, which should be easier to align. 
+
+In practice, an attached rest, or a way to mount the keyboard firmly to the desk, is required. Even with the cork bottom, and adding extra weight, the keypad shifts during use when pushing/pulling on the joystick, parallel to the desk.
+ 
+## Done!
+
+{% include figure.html url="images/post/2019/keypad/assembly-complete-34.jpg" description="Completed case and temporary wrist rest" %}
+{% include figure.html url="images/post/2019/keypad/assembly-complete-bottom.jpg" description="Case underside" %}
+
+## Firmware
+
+I had initially planned to use [QMK](https://qmk.fm) as the keyboard firmware, using an as-yet [unmerged pull request](https://github.com/qmk/qmk_firmware/pull/4226)  designed to add joystick support. However, newer ARM Teensy controllers (>=Teensy 3.2, Teensy LC) are not well supported by QMK. Though there are two example (single-key) keyboards which support ARM Teensys, only one is currently working. Additionally, the incoming patch does not yet support ARM controllers.
 
 When and if that patch is merged, and ARM support is implemented, I'll finish and release the QMK setup. In the mean time, I put together an Arduino sketch instead, starting from [somebody else's work here](https://forum.pjrc.com/threads/55395-Keyboard-simple-firmware).
 
 It has two modes, one with a standard QWERTY layout plus the joystick and a single joystick button, and the other where all of the keys are mapped to joystick buttons. This allows enough buttons to configure Steam's controller configurator, allowing the controller to be used as an XInput device with broader game support.
 
 {% gist ec4ccf967088edef36e67010839f3dd1 %}
+
