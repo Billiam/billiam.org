@@ -10,8 +10,10 @@ tags: [3d-printing, keypad]
 
 Some time after it was discontinued, my [Logitech G13]('/2017/10/12/customizing-logitech-g13') stopped working and I decided to design a replacement, which I've named Sherbet.
 
-Final results first
+Final results first:
 {% include figure.html url="images/post/2019/keypad/assembly-complete-front.jpg" description="Sherbet keypad with joystick" %}
+
+Printable files and assembly notes: [http://www.thingiverse.com/thing:3744277](http://www.thingiverse.com/thing:3744277)
 
 ## Design
 
@@ -150,9 +152,13 @@ I couldn't find any thinner gauge wire locally, and the only solid core wire I h
 
 {% include figure.html url="images/post/2019/keypad/wiring-complete.jpg" description="Wired rows, columns, joystick, and usb breakout to microcontroller" %}
 
-I designed the wrist rest to use two m4 screws, with heat-set inserts in the rest. These ended up slightly misaligned when I inserted them, so I can't attach it yet. I'm planning to reprint the rest with a slot cut through the bottom to hold an m4 nut instead, which should be easier to align. 
+I designed the wrist rest to use two m4 screws, with heat-set inserts in the rest. These ended up slightly misaligned when I inserted them, 
+so I can't attach it yet. I'm planning to reprint the rest with a slot cut through the bottom to hold an m4 nut instead, which should be easier to align. 
 
-In practice, an attached rest, or a way to mount the keyboard firmly to the desk, is required. Even with the cork bottom, and adding extra weight, the keypad shifts during use when pushing/pulling on the joystick, parallel to the desk.
+In practice, an attached rest, or a way to mount the keyboard firmly to the desk, is required. Even with the cork bottom, and adding extra weight,
+the keypad shifts during use when pushing/pulling on the joystick, parallel to the desk.
+
+I redesigned and reprinted the wrist rest so that it uses two captive m4 nuts, instead of heat-set inserts, and that seems to work fine.
  
 ## Done!
 
@@ -168,4 +174,3 @@ When and if that patch is merged, and ARM support is implemented, I'll finish an
 It has two modes, one with a standard QWERTY layout plus the joystick and a single joystick button, and the other where all of the keys are mapped to joystick buttons. This allows enough buttons to configure Steam's controller configurator, allowing the controller to be used as an XInput device with broader game support.
 
 {% gist ec4ccf967088edef36e67010839f3dd1 %}
-
