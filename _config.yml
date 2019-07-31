@@ -2,7 +2,7 @@
 
 title:            Fail Fast
 locale:           en_US
-url:              http://www.billiam.org
+url:              https://www.billiam.org
 
 related_posts:
   size: 0
@@ -37,7 +37,7 @@ page:
 # Site owner
 owner:
   name: Billiam
-  avatar: http://gravatar.com/avatar/1bfddef2f40f4bf20bfc2bec3b50dadc?s=150
+  avatar: https://gravatar.com/avatar/1bfddef2f40f4bf20bfc2bec3b50dadc?s=150
   bio: "\"Hey, sorry I haven't updated in a while. Life's been crazy, but I'll be back soon.\""
   email: 
   disqus-shortname: 
