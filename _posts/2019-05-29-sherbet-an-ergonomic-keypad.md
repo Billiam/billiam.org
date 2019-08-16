@@ -13,7 +13,7 @@ Some time after it was discontinued, my [Logitech G13]('/2017/10/12/customizing-
 Final results first:
 {% include figure.html url="images/post/2019/keypad/assembly-complete-front.jpg" description="Sherbet keypad with joystick" %}
 
-Printable files and assembly notes: [http://www.thingiverse.com/thing:3744277](http://www.thingiverse.com/thing:3744277)
+Printable files and assembly notes: [https://www.prusaprinters.org/prints/5072-sherbet-gaming-keypad](https://www.prusaprinters.org/prints/5072-sherbet-gaming-keypad)
 
 ## Design
 
