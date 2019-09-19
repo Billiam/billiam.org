@@ -53,4 +53,4 @@ this application, or may prevent you from running it entirely.
 
 If there's enough interest to warrant the cost, I'll get one or both of those signed in the future.
 
-https://billiam.itch.io/jotdown/
+[https://billiam.itch.io/jotdown/](https://billiam.itch.io/jotdown/)
