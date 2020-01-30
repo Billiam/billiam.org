@@ -13,11 +13,18 @@
   <h3 itemprop="name">{{ author.name }}</h3>
   <p>{{ author.bio }}</p>
   {% if author.email %}<a href="mailto:{{ author.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>{% endif %}
+  {% if author.etsy %}<a href="https://www.etsy.com/shop/{{ author.etsy }}" class="author-social" target="_blank"><i class="fa fa-fw">
+  <svg style="vertical-align:middle;width:14px;" viewBox="0 0 512 512"><path d="M384 348c-1.75 10.75-13.75 110-15.5 132-117.879-4.299-219.895-4.743-368.5 0v-25.5c45.457-8.948 60.627-8.019 61-35.25 1.793-72.322 3.524-244.143 0-322-1.029-28.46-12.13-26.765-61-36v-25.5c73.886 2.358 255.933 8.551 362.999-3.75-3.5 38.25-7.75 126.5-7.75 126.5H332C320.947 115.665 313.241 68 277.25 68h-137c-10.25 0-10.75 3.5-10.75 9.75V241.5c58 .5 88.5-2.5 88.5-2.5 29.77-.951 27.56-8.502 40.75-65.251h25.75c-4.407 101.351-3.91 61.829-1.75 160.25H257c-9.155-40.086-9.065-61.045-39.501-61.5 0 0-21.5-2-88-2v139c0 26 14.25 38.25 44.25 38.25H263c63.636 0 66.564-24.996 98.751-99.75H384z" class=""></path></svg>
+</i> Etsy</a>{% endif %}
   {% if author.github %}<a href="http://github.com/{{ author.github }}" class="author-social" target="_blank"><i class="fa fa-fw fa-github-alt"></i> Github</a>{% endif %}
   {% if author.thingiverse %}<a href="http://www.thingiverse.com/{{ author.thingiverse}}/about" class="author-social" target="_blank">
   <i class="fa fa-fw">
   <svg style="vertical-align:middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M25 2C12.31 2 2 12.31 2 25s10.31 23 23 23 23-10.31 23-23S37.69 2 25 2zm0 2c11.61 0 21 9.39 21 21s-9.39 21-21 21S4 36.61 4 25 13.39 4 25 4zm-9 11v6h6v17h6V21h6v-6H16z"/></svg></i>
   Thingiverse</a>{% endif %}
+  {% if author.prusa %}<a href="https://www.prusaprinters.org/social/{{ author.prusa}}/prints" class="author-social" target="_blank">
+  <i class="fa fa-fw">
+    <svg style="vertical-align:middle;width:14px;" viewBox="0 0 496 512"><path fill="currentColor" d="M268.1 127.91H176c-4.42 0-8 3.58-8 8v240c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8v-72h72c51.43 0 92.68-44.32 87.57-96.78-4.45-45.71-45.54-79.22-91.47-79.22zm3.9 144h-72v-112h72c30.88 0 56 25.12 56 56s-25.12 56-56 56zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 464c-119.1 0-216-96.9-216-216S128.9 40 248 40s216 96.9 216 216-96.9 216-216 216z" class=""></path></svg>
+  </i> PrusaPrinters</a>{% endif %}
   {% if author.twitter %}<a href="http://twitter.com/{{ author.twitter }}" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter"></i> Twitter</a>{% endif %}
   {% if author.facebook %}<a href="http://facebook.com/{{ author.facebook }}" class="author-social" target="_blank"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a>{% endif %}
   {% if author.google.plus %}<a href="http://plus.google.com/+{{ author.google.plus }}" class="author-social" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>{% endif %}

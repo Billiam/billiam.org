@@ -65,7 +65,9 @@ owner:
   soundcloud: #username
   weibo: #username
   flickr: #username
-  thingiverse: billiamthesecond
+  thingiverse: #billiamthesecond
+  prusa: 23599-billiam
+  etsy: QuiteKeen
 
 include: [".htaccess"]
 exclude: ["vendor", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
