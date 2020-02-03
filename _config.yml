@@ -69,5 +69,21 @@ owner:
   prusa: 23599-billiam
   etsy: QuiteKeen
 
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    drafts:
+      layout: post
+      excerpt:
+      comments: false
+      share: false
+      tags: []
+    posts:
+      layout: post
+      excerpt:
+      comments: false
+      share: false
+      tags: []
+
 include: [".htaccess"]
 exclude: ["vendor", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
