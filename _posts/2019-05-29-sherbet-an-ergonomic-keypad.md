@@ -8,7 +8,7 @@ share: false
 tags: [3d-printing, keypad]
 ---
 
-Some time after it was discontinued, my [Logitech G13]('/2017/10/12/customizing-logitech-g13') stopped working and I decided to design a replacement, which I've named Sherbet.
+Some time after it was discontinued, my [Logitech G13]({% post_url 2017-10-12-customizing-logitech-g13 %}) stopped working and I decided to design a replacement, which I've named Sherbet.
 
 Final results first:
 {% include figure.html url="images/post/2019/keypad/assembly-complete-front.jpg" description="Sherbet keypad with joystick" %}
