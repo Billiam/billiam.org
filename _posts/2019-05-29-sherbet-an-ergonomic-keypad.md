@@ -6,6 +6,9 @@ excerpt: Designing, printing, and building a one-handed gaming keypad
 comments: false
 share: false
 tags: [3d-printing, keypad]
+image:
+    feature: post/2019/keypad/assembly-complete-34.jpg
+    thumb: post/2019/keypad/thumb.jpg
 ---
 
 Some time after it was discontinued, my [Logitech G13]({% post_url 2017-10-12-customizing-logitech-g13 %}) stopped working and I decided to design a replacement, which I've named Sherbet.
