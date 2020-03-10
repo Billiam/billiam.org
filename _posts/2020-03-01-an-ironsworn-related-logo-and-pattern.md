@@ -9,6 +9,7 @@ tags:
     - rpg
     - logo
 image:
+    feature: post/2020/dice_logos/pattern.jpg
     thumb: post/2020/dice_logos/pattern.jpg
 ---
 

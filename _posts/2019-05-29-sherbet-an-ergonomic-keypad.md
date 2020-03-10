@@ -8,6 +8,7 @@ share: false
 tags: [3d-printing, keypad]
 image:
     feature: post/2019/keypad/assembly-complete-34.jpg
+    og_feature: post/2019/keypad/assembly-complete-34.jpg
     thumb: post/2019/keypad/thumb.jpg
 ---
 

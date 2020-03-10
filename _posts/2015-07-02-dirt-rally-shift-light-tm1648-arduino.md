@@ -6,6 +6,7 @@ comments: false
 share: false
 tags: [arduino, python, DiRT Rally, tm1638]
 image:
+  og_feature: post/2015/tm1638/tm1638-banner.jpg
   feature: post/2015/tm1638/tm1638-banner.jpg
 ---
 
