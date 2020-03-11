@@ -13,9 +13,9 @@
 
 {% include _navigation.html %}
 
-
 {% if page.image.feature %}
   {% assign header_page = page %}
+  {% assign feature_class = "image-wrap-center" %}
 {% else %}
   {% for other_page in site.pages %}
   {% if other_page.url == '/' %}
@@ -26,7 +26,7 @@
 {% endif %}
 
 {% if header_page.image.feature %}
-  <div class="image-wrap image-wrap-center">
+  <div class="image-wrap {{ feature_class }}">
   <img src=
     {% if header_page.image.feature contains 'http' %}
       "{{ header_page.image.feature }}"
