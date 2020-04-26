@@ -13,7 +13,7 @@ image:
     thumb: post/2020/dice_logos/pattern.jpg
 ---
 
-I'm working on a 3d print design for the [Ironsworn tabletop RPG](https://www.ironswornrpg.com/) and wanted something relavent-but-not-infringing to decorate it with. Here's a logo-like image, and repeating tile.
+I'm working on a 3d print design for the [Ironsworn tabletop RPG](https://www.ironswornrpg.com/) and wanted something relevant-but-not-infringing to decorate it with. Here's a logo-like image, and repeating tile.
 
 They're stored in a vector format, and licensed under Creative Commons 4.0.
 
