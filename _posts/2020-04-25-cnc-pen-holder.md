@@ -69,6 +69,14 @@ Here's a comparison of the line quality
 
 {% include figure.html url="images/post/2020/cnc_pen/drawing_3_close_up.jpg" description="Close up of second drawing" %}
 
+### Next steps
+
+The issue with this last design is that it both relies on a tight fit between the sliding plastic carriage and the bolts, but is also hampered by any friction there. To reduce play, these holes should be as tight as possible, but then pen won't be able to move up and down smoothly.
+
+I've purchased some teeny, tiny linear rails and will attempt to replace the moving components of this last design with them instead when I get the chance.
+
+### Files
+
 Files can be found here:
 
 * [Modular quick release router mount](https://www.prusaprinters.org/prints/28450-modular-dewalt-dwp611-router-collar-quick-release)
