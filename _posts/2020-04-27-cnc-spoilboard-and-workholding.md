@@ -2,7 +2,7 @@
 layout: post
 title: CNC spoilboard
 date: 2020-04-27 00:20 -0500
-excerpt: 
+excerpt:
 comments: false
 share: false
 tags: [cnc]
@@ -60,9 +60,9 @@ More on this later, still trying to figure it out, but I often have to unjam the
 
 First, I cut a section of MDF, a bit oversized, and temporarily fastened it to my wasteboard using drywall screws around the outside edge. I really want to find a better fastener for this but haven't yet.
 
-Then, I set up some operations in Fusion 360. First, I surfaced the area of the wasteboard that the CNC could reach, enough to take care of any real high spots and/or warping. This also showed just how out of tram my router was, with a huge nod forward. After some investigating, most of this nod was coming from [badly off-square router mount]({% post_url 2020-04-23-cnc-router-assembly %}#router-mount-squaring). Once that was shimmed back to square, there was enough play at the router to get it close to trammed using a [simple tramming tool](https://www.youtube.com/watch?v=D6pfIoyhgTc).
+Then, I set up some operations in Fusion 360. First, I surfaced the area of the wasteboard that the CNC could reach, enough to take care of any real high spots and/or warping. This also showed just how out of tram my router was, with a huge nod forward. After some investigating, most of this nod was coming from [badly off-square router mount]({% post_url 2020-04-24-cnc-router-assembly %}#router-mount-squaring). Once that was shimmed back to square, there was enough play at the router to get it close to trammed using a [simple tramming tool](https://www.youtube.com/watch?v=D6pfIoyhgTc).
 
-{% include figure.html url="images/post/2020/cnc_wasteboard/first_surface.jpg" description="Before tramming" %} 
+{% include figure.html url="images/post/2020/cnc_wasteboard/first_surface.jpg" description="Before tramming" %}
 
 {% include figure.html url="images/post/2020/cnc_wasteboard/first_surface_close.jpg" description="Before tramming, close up" %}
 
@@ -73,7 +73,6 @@ These I then hand drilled, deeply countersunk, dropped some CA glue into for a l
 I then ran a 2D contour toolpath to cut the excess MDF free and removed the temporary screws.
 
 {% include figure.html url="images/post/2020/cnc_wasteboard/cut_out.jpg" description="Wasteboard cut out, drilled and fastened" %}
-
 
 After the wasteboard was fastened and cut free, I made some relief cuts for the dovetails just under the final depth with a 1/4" downcut endmill, and then ran the dovetails in the same slots.
 
