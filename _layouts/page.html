@@ -14,16 +14,29 @@
 {% include _navigation.html %}
 
 {% if page.image.feature %}
-  <div class="image-wrap">
+  {% assign header_page = page %}
+  {% assign feature_class = "image-wrap-center" %}
+{% else %}
+  {% for other_page in site.pages %}
+  {% if other_page.url == '/' %}
+    {% assign header_page = other_page %}
+    {% break %}
+  {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+{% if header_page.image.feature %}
+  <div class="image-wrap {{ feature_class }}">
   <img src=
-    {% if page.image.feature contains 'http' %}
-      "{{ page.image.feature }}"
+    {% if header_page.image.feature contains 'http' %}
+      "{{ header_page.image.feature }}"
     {% else %}
-      "{{ site.baseurl }}/images/{{ page.image.feature }}"
+      "{{ site.baseurl }}/images/{{ header_page.image.feature }}"
     {% endif %}
   alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% if header_page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ header_page.image.creditlink }}">{{ header_page.image.credit }}</a></span>
   {% endif %}
   </div><!-- /.image-wrap -->
 {% endif %}

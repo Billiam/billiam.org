@@ -7,6 +7,9 @@ url:              https://www.billiam.org
 related_posts:
   size: 0
 
+paginate: 5
+
+
 # Jekyll configuration
 
 permalink:   /:year/:month/:day/:title
@@ -17,6 +20,7 @@ sass:
   style: compressed
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate
 
 redcarpet:
   extensions: [autolink, footnotes, no_intra_emphasis, tables]
@@ -27,13 +31,25 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
-
 post:
   template: _item_templates/_post.md
   extension: md
 page:
   template: _item_templates/_page.md
   extension: md
+collections:
+  projects:
+      output: true
+      permalink: /:collection/:path
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
 # Site owner
 owner:
   name: Billiam

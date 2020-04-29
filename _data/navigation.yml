@@ -1,4 +1,7 @@
 # Site navigation links
 
-- title: Posts
+- title: all posts
   url: /posts/
+- title: Projects
+  url: /projects/
+

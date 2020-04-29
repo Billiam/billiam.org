@@ -31,7 +31,7 @@
 <div id="main" role="main">
   <div class="article-author-side">
   </div>
-   {% for post in site.posts %}
+   {% for post in paginator.posts %}
    <div class="list-article">
    <div class="article-author-side ">
      {% if forloop.first %}
@@ -59,8 +59,37 @@
     <hr />
   </article>
 
-   </div>
+  </div>
   {% endfor %}
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination-wrap">
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a class="relative" href="{{ paginator.previous_page_path | relative_url }}">Prev</a>
+    {% else %}
+      <span class="relative">Prev</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="current">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a class="relative" href="{{ paginator.next_page_path | relative_url }}">Next</a>
+    {% else %}
+      <span class="relative">Next</span>
+    {% endif %}
+  </div>
+  </div>
+  {% endif %}
+
 </div><!-- /#main -->
 
 <div class="footer-wrap">

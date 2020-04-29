@@ -1,0 +1,109 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="post">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  {% assign header_page = page %}
+  {% assign feature_class = "image-wrap-center" %}
+{% else %}
+  {% for other_page in site.pages %}
+  {% if other_page.url == '/' %}
+    {% assign header_page = other_page %}
+    {% break %}
+  {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+{% if header_page.image.feature %}
+  <div class="image-wrap {{ feature_class }}">
+  <img src=
+    {% if header_page.image.feature contains 'http' %}
+      "{{ header_page.image.feature }}"
+    {% else %}
+      "{{ site.baseurl }}/images/{{ header_page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if header_page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ header_page.image.creditlink }}">{{ header_page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+
+<div id="main" role="main">
+   <div class="article-author-side">
+      {% include _author-bio.html %}
+   </div>
+
+  <div id="article-column">
+  <div class="collection-index">
+    <h2>{{ page.title }}</h2>
+    <p>{{ page }}</p>
+
+    {% for post in site.tags[page.tag] reversed %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+
+    {% if forloop.first %}
+      <h3>{{ post.date | date: '%Y' }}</h3>
+    {% else %}
+      {% if year != pyear %}
+        <h3>{{ year }}</h3>
+      {% endif %}
+    {% endif %}
+
+    {% capture pyear %}{{year}}{% endcapture %}
+
+    <article>
+      <h2><a href="#{{ post.title | slugify }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    </article>
+  {% endfor %}
+  </div>
+
+  {% for post in site.tags[page.tag] reversed %}
+   <article class="post">
+    <div class="headline-wrap">
+      {% if post.link %}
+        <h1 id="{{ post.title | slugify }}"><a href="{{ post.link }}">{{ post.title }}</a></h1>
+      {% else %}
+        <h1 id="{{ post.title | slugify }}"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h1>
+      {% endif %}
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      {{ post.content }}
+      <footer role="contentinfo">
+        {% if post.share != false %}{% include _social-share.html %}{% endif %}
+        <p class="byline"><strong>{{ post.title }}</strong> was published on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% if post.modified %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}">{{ post.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  {% if site.owner.disqus-shortname and post.comments == true %}
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  {% endif %}
+    <hr />
+  </article>
+
+    {% endfor %}
+    </div>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+
+</body>

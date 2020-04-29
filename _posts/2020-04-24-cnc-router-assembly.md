@@ -5,7 +5,7 @@ date: 2020-04-23 00:19 -0500
 excerpt: 
 comments: false
 share: false
-tags: [CNC]
+tags: [cnc]
 ---
 
 I preordered the [Millright Mega V CNC router](https://millrightcnc.com/product/millright-cnc-mega-v-router-bundle/) in October, and it feels like I should write something about it.
