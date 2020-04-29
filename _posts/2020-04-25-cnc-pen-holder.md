@@ -58,6 +58,9 @@ To reduce some of the backlash, I used a couple of bolts with smooth shafts to g
 
 I reused the sliding base for this one, but turned the pen back to straight upright, so that it can slide up and down more easily.
 
+
+{% include figure.html url="images/post/2020/cnc_pen/pen_holder_3.jpg" description="Vertical penholder, again" %}
+
 This gave the best result so far, but you can still see some of the play in the system as it "flicks" back into position at the end of each line.
 
 {% include youtube.html id="hDC6Hd6kuno" %}
