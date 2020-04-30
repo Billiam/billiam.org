@@ -49,7 +49,7 @@ These I just cut on a table saw, and then drilled a hole roughly in the center.
 
 These are simple spiral-shaped cam clamps that apply sideways pressure, but won't hold anything down.
 
-I cut these from 1/2" plywood, and they work great.
+I cut these from 3/4" plywood, and they work great.
 
 {% include youtube.html id="qOtn1O4SY80" %}
 
