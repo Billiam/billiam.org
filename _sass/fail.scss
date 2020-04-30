@@ -1,3 +1,8 @@
+@mixin break-word() {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .list-article {
   clear:both;
 
@@ -10,6 +15,11 @@
   }
 }
 
+.article-wrap {
+  p>a, li>a {
+    @include break-word();
+  }
+}
 .fluid-width-video-wrapper {
   margin-bottom: 2em;
 }
@@ -36,6 +46,8 @@ figure img {
     @include font-rem(14);
   }
   .pagination {
+    text-align: center;
+  
     @include grid(12,10);
     @include prefix(12,1);
     @include suffix(12,1);
@@ -53,17 +65,31 @@ figure img {
 }
 .pagination {
   .relative {
-   border: 2px solid #ccc;
-   text-transform: uppercase;
+    border: 2px solid #ccc;
+    text-transform: uppercase;
   }
   .current {
     background-color: #111;
     color: #ddd;
   }
+  span.relative {
+    color: #ccc;
+  }
   span, a {
     border-radius: 4px;
     padding: 5px 10px;
-    margin-right: 8px;
+    margin: 0 8px 8px 0;
+    display: none;
+
+    &.relative, &.current {
+      display: inline-block;
+    }
+  }
+
+  @media #{$small} {
+    span, a {
+      display: inline-block;
+    }
   }
 }
 
