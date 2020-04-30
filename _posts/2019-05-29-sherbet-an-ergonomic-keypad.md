@@ -17,7 +17,7 @@ Some time after it was discontinued, my [Logitech G13]({% post_url 2017-10-12-cu
 Final results first:
 {% include figure.html url="images/post/2019/keypad/assembly-complete-front.jpg" description="Sherbet keypad with joystick" %}
 
-Printable files and assembly notes: [https://www.prusaprinters.org/prints/5072-sherbet-gaming-keypad](https://www.prusaprinters.org/prints/5072-sherbet-gaming-keypad)
+Printable files and assembly notes: <https://www.prusaprinters.org/prints/5072-sherbet-gaming-keypad>
 
 ## Design
 
@@ -146,7 +146,7 @@ I added homing bumps by embedding 1.5mm ceramic bearings in the key caps. Shown 
 
 {% include figure.html url="images/post/2019/keypad/tests-homing-bump.jpg" description="Key cap with embedded bearing" %}
 
-Once I'd run out of tasks to procrastinate with, I started on wiring, beginning with the key rows and columns. 
+Once I'd run out of tasks to procrastinate with, I started on wiring, beginning with the key rows and columns.
 
 I couldn't find any thinner gauge wire locally, and the only solid core wire I had was 22awg, which was just too hard to bend around the column offsets in the case, and to fit into small spaces between the case walls and the switch pins. Instead, I used 28awg stranded wire from a roll of ribbon cable, stripped it in sections with self-adjusting wire strippers, and then made and tinned small loops in the stripped sections. Thinner, solid wire would have been faster and less cumbersome.
 
@@ -156,14 +156,14 @@ I couldn't find any thinner gauge wire locally, and the only solid core wire I h
 
 {% include figure.html url="images/post/2019/keypad/wiring-complete.jpg" description="Wired rows, columns, joystick, and usb breakout to microcontroller" %}
 
-I designed the wrist rest to use two m4 screws, with heat-set inserts in the rest. These ended up slightly misaligned when I inserted them, 
-so I can't attach it yet. I'm planning to reprint the rest with a slot cut through the bottom to hold an m4 nut instead, which should be easier to align. 
+I designed the wrist rest to use two m4 screws, with heat-set inserts in the rest. These ended up slightly misaligned when I inserted them,
+so I can't attach it yet. I'm planning to reprint the rest with a slot cut through the bottom to hold an m4 nut instead, which should be easier to align.
 
 In practice, an attached rest, or a way to mount the keyboard firmly to the desk, is required. Even with the cork bottom, and adding extra weight,
 the keypad shifts during use when pushing/pulling on the joystick, parallel to the desk.
 
 I redesigned and reprinted the wrist rest so that it uses two captive m4 nuts, instead of heat-set inserts, and that seems to work fine.
- 
+
 ## Done!
 
 {% include figure.html url="images/post/2019/keypad/assembly-complete-34.jpg" description="Completed case and temporary wrist rest" %}

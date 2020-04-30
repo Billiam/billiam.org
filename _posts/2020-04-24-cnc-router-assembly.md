@@ -2,7 +2,7 @@
 layout: post
 title: CNC router setup and assembly
 date: 2020-04-23 00:19 -0500
-excerpt: 
+excerpt:
 comments: false
 share: false
 tags: [cnc]
@@ -24,8 +24,8 @@ This is a very simple 2x4 and 4x4 box (in line with my woodworking ability), wit
 I went back and forth about putting the whole thing on casters, whether they should be raisable so that the box is sitting on solid wood when stationary, how much the box and table would weigh, and most importantly how well they could be used with the table tucked into a corner when only of the feet/casters might be accessible.
 
 Eventually, I settled on these:
-https://smile.amazon.com/gp/product/B07V1NTLDP
- 
+<https://smile.amazon.com/gp/product/B07V1NTLDP>
+
 They work well, but are difficult raise and lower once weighed down. I'd like to replace them but haven't yet found an alternative.
 
 ## Parts arrive
@@ -41,7 +41,7 @@ I put together what I could before building a cabinet for the CNC but it didn't 
 
 ## Table assembly
 
-I started building the table right around the time of my state's stay-at-home order. I let my local big box store select and deliver some of the worst warped, cupped, and twisted, wet wood, I've seen. It was still cheaper than my local lumberyards (by a lot) but quality isn't great unless you can spend time picking through their stacks. 
+I started building the table right around the time of my state's stay-at-home order. I let my local big box store select and deliver some of the worst warped, cupped, and twisted, wet wood, I've seen. It was still cheaper than my local lumberyards (by a lot) but quality isn't great unless you can spend time picking through their stacks.
 
 {% include figure.html url="images/post/2020/cnc_assembly/4x4.jpg" description="Cut 4x4s for assembly" %}
 
@@ -55,13 +55,13 @@ Assembly was easier than I expected, largely owing to the prebuilt control box. 
 
 There are some issues getting the Mega V set up that I (and other people) have run into, that I wish I'd known about when I started.
 
-### Instructions 
+### Instructions
 
 At the time of building (and writing), the assembly instructions are limited to two assembly youtube videos. They're not bad, but some sections are not clear, or slightly out of order (esp related to the endstop switches) and in general it's a pain in the butt to watch video, pause, assemble, rewind and repeat, when written instructions with diagrams would have been easier in most cases.
 
 ### Bearing insertion
 
-The instructions call for hammering these into the v-wheels. I found it was much easier to use [this 3d-printed bearing press]( https://www.thingiverse.com/thing:2275122). I printed this ages ago, and I use it for all kinds of things now. This may be be the first time I've used it to press bearings into something though.
+The instructions call for hammering these into the v-wheels. I found it was much easier to use [this 3d-printed bearing press](https://www.thingiverse.com/thing:2275122). I printed this ages ago, and I use it for all kinds of things now. This may be be the first time I've used it to press bearings into something though.
 
 
 ### Wiring

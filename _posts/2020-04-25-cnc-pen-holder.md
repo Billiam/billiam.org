@@ -2,7 +2,7 @@
 layout: post
 title: CNC software, pen holder
 date: 2020-04-25 23:36 -0500
-excerpt: 
+excerpt:
 comments: false
 share: false
 tags: [cnc]
@@ -38,7 +38,7 @@ And here it is with a small bracket to hold a sharpened nail (I used it to measu
 
 This one is very simple. It uses a collar with a set screw to keep the pen from sliding out, and a cop with a slot to hold a rubber band for tension. The pen can move up and down a bit in case of uneven surfaces, and getting the heigh zeroed out exactly isn't critical.
 
-Here it is running some gcode. I generated the paths for this by passing a photo to [https://github.com/fullscreennl/blackstripes-python-extensions](blackstripes), and then importing the SVG into Fusion 360 and then running a contour toolpath with no cut compensation.
+Here it is running some gcode. I generated the paths for this by passing a photo to [blackstripes](https://github.com/fullscreennl/blackstripes-python-extensions), and then importing the SVG into Fusion 360 and then running a contour toolpath with no cut compensation.
 
 {% include youtube.html id="_VgFftvg3ek" %}
 

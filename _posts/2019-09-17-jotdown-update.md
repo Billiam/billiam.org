@@ -15,8 +15,8 @@ After several years of stagnation, I've released [JotDown: a markdown editing su
 
 ## Another markdown editor? Really?
 
-While there's certainly no shortage of markdown editors available, I wanted something more specific. Namely, 
-a better way to organize markdown files. 
+While there's certainly no shortage of markdown editors available, I wanted something more specific. Namely,
+a better way to organize markdown files.
 
 Markdown files can be grouped together by category, directory, or tag, and that metadata is stored in an standard and
 portable way: as YAML at the beginning of the file, for example:
@@ -35,12 +35,12 @@ tags:
 Lots of notes go here
 ```
 
-I use JotDown for organizing and planning projects, campaign notes and ideas for tabletop games, and journaling for 
+I use JotDown for organizing and planning projects, campaign notes and ideas for tabletop games, and journaling for
 longer term projects.
 
 Maybe it'll be useful for somebody else as well.
 
-It also supports all or most of the usual markdown editor features, but also includes: 
+It also supports all or most of the usual markdown editor features, but also includes:
 
 * Rendering of flow charts and sequence diagrams
 * Markdown preview including synced checkbox lists
@@ -53,4 +53,4 @@ this application, or may prevent you from running it entirely.
 
 If there's enough interest to warrant the cost, I'll get one or both of those signed in the future.
 
-[https://billiam.itch.io/jotdown/](https://billiam.itch.io/jotdown/)
+<https://billiam.itch.io/jotdown/>

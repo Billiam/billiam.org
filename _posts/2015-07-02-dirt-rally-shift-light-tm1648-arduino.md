@@ -11,7 +11,7 @@ image:
 ---
 
 After some trial and error (_and error, and error, and error_), I've managed to get DiRT Rally telemetry data to
-display on a TM1638 display module, and have released both the arduino sketch I'm using and the python script used for communication here: https://github.com/Billiam/pygauge
+display on a TM1638 display module, and have released both the arduino sketch I'm using and the python script used for communication here: <https://github.com/Billiam/pygauge>
 
 The python script is also available as an all-in-one exe. You can download `gauge.zip` [here](https://github.com/Billiam/pygauge/releases).
 
@@ -22,7 +22,7 @@ I started with [X-Sim](http://x-sim.de/software.php?lang=eng) and [this guide](h
 
 X-Sim is extremely flexible and powerful, but is very configuration-heavy and felt like overkill for this project. If you're already using X-Sim to drive your sim rig/gauges, I'd recommend sticking with it.
 
-Additionally, if you're interested in using this LED module for other games, including Assetto Corsa, iRacing, Project Cars and rFactor, check out http://batrako.blogspot.com/ instead.
+Additionally, if you're interested in using this LED module for other games, including Assetto Corsa, iRacing, Project Cars and rFactor, check out <http://batrako.blogspot.com/> instead.
 
 ### Requirements:
 
@@ -35,9 +35,9 @@ I just soldered wires directly to the arduino pins, but if you plan to reuse you
 
 ### Hardware setup
 
-Connect the Arduino to your machine. You may need to install these drivers to recognize the USB serial device: http://www.ftdichip.com/Drivers/CDM/CDM%20v2.12.00%20WHQL%20Certified.zip
+Connect the Arduino to your machine. You may need to install these drivers to recognize the USB serial device: <http://www.ftdichip.com/Drivers/CDM/CDM%20v2.12.00%20WHQL%20Certified.zip>
 
-Install the Arduino software. Here is a helpful getting started guide: https://www.arduino.cc/en/Guide/Windows. Download the [TM1638 library](https://code.google.com/p/tm1638-library/) and extract the TM1638 directory to your Arduino library folder (ex: `C:\Program Files\Arduino\libraries`).
+Install the Arduino software. Here is a helpful getting started guide: <https://www.arduino.cc/en/Guide/Windows>. Download the [TM1638 library](https://code.google.com/p/tm1638-library/) and extract the TM1638 directory to your Arduino library folder (ex: `C:\Program Files\Arduino\libraries`).
 
 Verify that you can upload sketches by uploading the blinky light Arduino example (see guide link).
 
@@ -63,13 +63,13 @@ In your DiRT hardware configuration, `<Documents>\My Games\DiRT Rally\hardwarese
 ```xml
 <motion_platform>
   ...
-  <udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" /> 
+  <udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" />
 </motion_platform>
 ```
 
 Install [this sketch](https://raw.githubusercontent.com/Billiam/pygauge/master/arduino/tm1638-gauge.ino) on your Arduino. You may need to change the data, clock and strobe pin numbers, again depending on how you wired the led module up.
 
-Download the [pygauge](https://github.com/Billiam/pygauge/releases) app, which will be responsible for passing telemetry data from DiRT Rally to the Arduino. 
+Download the [pygauge](https://github.com/Billiam/pygauge/releases) app, which will be responsible for passing telemetry data from DiRT Rally to the Arduino.
 
 Edit the included `config.yml` file, setting the `host` and `port` of DiRT Rally (likely 127.0.0.1 and 20777 if you've left everything default), and the COM port that your Arduino is connected to.
 
@@ -86,9 +86,9 @@ That's about it. Load up DiRT Rally, and you should see the LED module react onc
 
 ## tl;dr
 
-1. Install Arduino sketch: https://github.com/Billiam/pygauge
+1. Install Arduino sketch: <https://github.com/Billiam/pygauge>
 2. Set DiRT's `extradata` to 3
-3. Grab latest gauge.zip from https://github.com/Billiam/pygauge/releases
+3. Grab latest gauge.zip from <https://github.com/Billiam/pygauge/releases>
 4. Update config.yml with your COM port, and dirt's IP address and port.
 2. Run gauge.exe
 3. Start game.
