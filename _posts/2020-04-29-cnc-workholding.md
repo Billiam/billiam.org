@@ -76,7 +76,7 @@ I'm experimenting with low profile sliding clamps, and just finished designing a
 
 {% include figure.html url="images/post/2020/cnc_workholding/low_profile.jpg" description="Low profile clamp, printed" %}
 
-{% include figure.html url="images/post/2020/cnc_workholding/low_profile_on_table.jpg" description="Clam in use" %}
+{% include figure.html url="images/post/2020/cnc_workholding/low_profile_on_table.jpg" description="Clamp in use" %}
 
 This uses a M5 18mm socket screw (I'm really using a 16mm but it's a little short) for the sliding part, a M5 16mm screw to hold it to the dovetail insert, and a couple of 5x25mm steel dowel pins.
 
