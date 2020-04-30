@@ -30,9 +30,14 @@ Most recently, I also made them a little bit shorter, so that I can surface the 
 
 These are not perfect though. With tight clamping, these get stuck in the MDF. I'm not sure if the MDF is getting deformed and snapping back when pressure is removed, or if the layer lines in the 3d print are kind of biting into the MDF surface, or if they're getting jammed by rotation.
 
-After clamping tightly, I usually have to uncscrew the knobs, pull off the blocks or cam clamps, and then poke the inserts back into the slots with a screwdriver to free them up. I'm not sure how to solve this yet. It could be that I can change the surface of the inserts by sanding them, or slightly changing the shape, or I may be able to change the shape to add some relief so that they rotate back easily.
+After clamping tightly, I usually have to uncscrew the knobs, pull off the blocks or cam clamps, and then poke the inserts back into the slots with a screwdriver to free them up. I'm not sure how to solve this yet. I've tried a few variations so far.
 
-Maybe they should be slightly over-tapered, so that more of the holding force is applied deeper in the dovetail, rather than near the surface.
+* Sanding and polishing the inserts so that layer lines are soft and smooth
+* Increasing the taper of the inserts, so that they're tighter toward the bottom of the slots
+* Rounding the top of the inserts so that the edges are less likely to gouge in
+* Adding reliefs in the sides at 10 and 4 o'clock, so that they're less likely to get jammed by rotation.
+
+I haven't notice any difference with these though.
 
 ## Stop blocks
 
