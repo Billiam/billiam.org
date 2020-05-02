@@ -63,13 +63,18 @@ and works with the Logitech K400 plus.
 
 I have it set up to jog on X and Y with the arrow keys, Z axis via `I` and `K` in 0.1mm increments.
 
-`Ctrl + direction` will move 10mm at a time.
-`Alt + direction` will move 1mm at a time.
-`Shift + direction` will move continuously in that direction until shift is released.
+`Ctrl + direction` will move 10mm at a time.  
+`Alt + direction` will move 1mm at a time.  
+`Shift + direction` will move continuously in that direction until shift is released.  
 
 `Ctrl + H` will home the machine.
 
-I'm thinking of adding probe commands, but I can't unpause dialogs I can't see, so I'm not sure how safe that would end up being.
+I've also added a few macros via keyboard:
+
+`Ctrl` + `P` will run an XYZ probe  
+`Ctrl` + `Z` will just run a Z probe  
+`Ctrl` + `1` will initialize the bitsetter for the first tool  
+`Ctrl` + `2` will use the bitsetter for tool changes  
 
 With an easier setup for jogging, I'm just using the default CNCjs interface on my phone to start jobs and run macros (but that's about it right now).
 
