@@ -75,7 +75,8 @@ I've also added a few macros via keyboard:
 `Ctrl` + `Z` will just run a Z probe  
 `Ctrl` + `1` will initialize the bitsetter for the first tool  
 `Ctrl` + `2` will use the bitsetter for tool changes  
+`Ctrl` + `Shift` + `Return` will continue after pausing for toolchanges.  
 
-With an easier setup for jogging, I'm just using the default CNCjs interface on my phone to start jobs and run macros (but that's about it right now).
+With an easier setup for jogging, I'm only using the default CNCjs interface on my phone to start jobs.
 
-Eventually, I'd like to replace the keyboard with something more specialized, but most of the commercial ones I've seen aren't compatible.
+Eventually, I'd like to replace the keyboard with something more specialized, but most of the commercial ones I've seen aren't compatible with GRBL.
