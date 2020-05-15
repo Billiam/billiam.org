@@ -26,7 +26,7 @@ It's promising, but has some issues.
 
 First, it has moving parts exposed to cnc dust and chips. I added a magnetic cover for it to help with that
 
-{% include youtube.html id=mIWHAKrAU-8 %}
+{% include youtube.html id="mIWHAKrAU-8" %}
 
 Second, though it's much lower profile than commercial options, it's just about flush with the surface of my wasteboard. For surfacing, when I'm cutting off the edge, I've been pulling the
 cap off and taping it down. I'm planning to move it out in front of the wasteboard instead.
