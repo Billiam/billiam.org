@@ -45,6 +45,9 @@
       {% else %}
         <h1><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h1>
       {% endif %}
+      <p class="date">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+      </p>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
       {{ post.content }}

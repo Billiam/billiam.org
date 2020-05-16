@@ -51,6 +51,9 @@
       {% else %}
         <h1><a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
       {% endif %}
+      <p class="date">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      </p>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
       {{ content }}
