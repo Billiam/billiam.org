@@ -110,6 +110,10 @@ figure img {
   article {
     &.post {
       float: none;
+      display: block;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
     }
 
   }
