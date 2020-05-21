@@ -2,6 +2,7 @@
 layout: post
 title: CNC software and jogging
 date: 2020-04-30 17:47 -0500
+modified: 2020-05-21 18:15 -0500
 excerpt:
 comments: false
 share: false
@@ -30,6 +31,12 @@ I also ran into [this issue](https://github.com/cncjs/cncjs-shopfloor-tablet/iss
 
 To transfer gcode from my machine to the raspberry pi, I'm currently using <https://github.com/efeiefei/node-file-manager>
 to upload the gcode to the CNCjs watch folder. It would have been easy to set up network shares for this also.
+
+I've also written (hacked together) a utility to upload gcode files to node file manager, as well as opening them in my default editor, and have set this utility as my Fusion 360 editor.
+
+Now, these are automatically uploaded after post processing.
+
+Utility can be found here: <https://github.com/Billiam/upload-passthrough>
 
 ## Probing and other macros
 
