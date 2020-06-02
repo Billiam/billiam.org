@@ -65,9 +65,13 @@
   </div>
   {% endfor %}
 
+
+
+
   {% if paginator.total_pages > 1 %}
   <div class="pagination-wrap">
   <div class="pagination">
+
     {% if paginator.previous_page %}
       <a class="relative" href="{{ paginator.previous_page_path | relative_url }}">Prev</a>
     {% else %}
@@ -78,7 +82,7 @@
       {% if page == paginator.page %}
         <span class="current">{{ page }}</span>
       {% elsif page == 1 %}
-        <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
       {% else %}
         <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
       {% endif %}
@@ -112,6 +116,6 @@
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include _scripts.html %}	        
+{% include _scripts.html %}
 
 </body>
