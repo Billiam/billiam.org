@@ -1,15 +1,15 @@
 ---
 layout: post
 title: 'Sequence8: A PICO-8 music toy'
-date: 2020-06-26 16:00 -0500
+date: 2020-07-04 21:47 -0500
 excerpt:
 comments: false
 share: false
 tags: [games,pico8,sequence,gamedev]
 image:
     feature: post/2020/sequence8/11-final-particles.gif
-    og_feature: post/2020/sequence8/11-final-particles.gif
-    thumb: post/2020/sequence8/logo.gif
+    og_feature: post/2020/sequence8/logo-thumb.gif
+    thumb: post/2020/sequence8/logo-thumb.gif
 ---
 
 I've just launched Sequence8, a PICO-8 music sequencer toy.
@@ -96,6 +96,7 @@ I'm doing this in a pretty simplistic way. For a much more performant (and techn
 
 {% include figure.html url="images/post/2020/sequence8/07-light-performance.gif" description="Light fade effect failing to maintain 60fps" %}
 
+In the end, I used a simpler approach, using one level of lighting off to the sides of the
 
 ### Particles
 
