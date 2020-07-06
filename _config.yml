@@ -55,18 +55,19 @@ owner:
   name: Billiam
   avatar: https://gravatar.com/avatar/1bfddef2f40f4bf20bfc2bec3b50dadc?s=150
   bio: "\"Hey, sorry I haven't updated in a while. Life's been crazy, but I'll be back soon.\""
-  email: 
-  disqus-shortname: 
+  email:
+  disqus-shortname:
   twitter: billiporter
   facebook: #username
   google:
     plus: #username
     analytics: UA-41743880-1
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
   github: Billiam
+  itch: billiam
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
   xing: #username

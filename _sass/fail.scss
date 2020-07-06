@@ -47,7 +47,7 @@ figure img {
   }
   .pagination {
     text-align: center;
-  
+
     @include grid(12,10);
     @include prefix(12,1);
     @include suffix(12,1);
@@ -62,6 +62,13 @@ figure img {
       @include suffix(12,3.5);
     }
   }
+}
+.author-social:hover {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 }
 .pagination {
   .relative {
