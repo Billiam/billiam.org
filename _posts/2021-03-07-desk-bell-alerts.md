@@ -2,7 +2,7 @@
 layout: post
 title: Arduino desk bell notifications
 date: 2021-03-07 22:46 -0600
-excerpt: ESP8266 and solenoid for
+excerpt: ESP8266 and solenoid for alerts
 comments: false
 share: false
 tags: []
