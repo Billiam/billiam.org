@@ -1,10 +1,14 @@
 ---
 title: Oskitone Okay 2 (with a teensy 4.1)
+excerpt: Polyphonic arduino keyboard project
 tags: [arduino, 3d-printing]
 layout: post
 date: 2022-10-25 18:27 -0500
 comments: false
 share: false
+image:
+  feature: post/2022/okay/open.jpg
+  og_feature: post/2022/okay/closed.jpg
 ---
 
 I built this last year, but completely forgot to post about it. As such, it's a bit detail-light.
