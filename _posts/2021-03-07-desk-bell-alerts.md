@@ -5,7 +5,7 @@ date: 2021-03-07 22:46 -0600
 excerpt: ESP8266 and solenoid for alerts
 comments: false
 share: false
-tags: []
+tags: [arduino]
 ---
 An itch.io [project of mine](https://billiam.itch.io/deepdwn) has been getting a little attention recently, and I wanted to get alerts for new purchases, instead of obsessively checking the website. I saw this [kickstarter alert desk bell project](https://aaronparecki.com/2017/11/13/5/kickstarter-desk-bell) a few years ago, and thought
 it would work great.

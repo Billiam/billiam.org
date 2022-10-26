@@ -86,6 +86,9 @@ Initial breadboard testing
 
 {% include figure.html url="images/post/2022/okay/breadboard.jpg" description="Breadboard, now with volume and selector switches" %}
 
+{% include figure.html url="images/post/2022/okay/breadboard_diagram.png" description="Breadboard diagram" %}
+
+
 Done!
 
 {% include youtube.html id="R1-ffu900Ls" vq="hd720" %}
