@@ -3,6 +3,7 @@ title: Centering text in CascadeStudio
 tags: [cascade-studio, 3d-printing]
 layout: post
 date: 2022-11-20 13:20 -0500
+excerpt: Just get the bounding box and translate
 comments: false
 share: false
 image:
