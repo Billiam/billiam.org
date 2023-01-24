@@ -13,7 +13,7 @@ image:
 
 I do a lot of multicolor 3d printing, where more than one color is printed _on the same layer_ using manual filament swapping, and I wanted to share some tips that I haven't seen collected everywhere.
 
-{% include figure.html url="images/post/2023/multicolor/counter.jpg" description="Several multicolor prints for TTRPG tracker" alt="3d printed game counter with multiple rings with inlayed numbers, with different colors for each ring." %}
+{% include figure.html url="images/post/2023/multicolor/counter.jpg" description="Several multicolor prints for a TTRPG tracker" alt="3d printed game counter with multiple rings with inlayed numbers, with different colors for each ring." %}
 
 Some of this applies to layer/height-based color swapping, but this is directed specifically at the above, AKA [the poor-man's MMU](https://www.instructables.com/Poor-Mans-MMU-Multicolor-Printing-With-Single-Extr/).
 
@@ -55,7 +55,7 @@ number_of_swaps = layer_count * (colors - 1)
 
 For text inlays and similar small details, you'll want to use a filament that is as opaque as possible. Transparent colors, especially over dark "background" colors, will appear dim and muddy.
 
-{% include figure.html url="images/post/2023/multicolor/thin-inlay.jpg" description="2 0.3mm layers of yellow-orange over black, compared to a single colored part" alt="Black box with a small yellow inlayed border, compared to another part printed entirely with the same filament. The border's color is less intense, and darker" %}
+{% include figure.html url="images/post/2023/multicolor/thin-inlay.jpg" description="Two 0.3mm layers of yellow-orange over black, compared to a single colored part" alt="Black box with a small yellow inlayed border, compared to another part printed entirely with the same filament. The border's color is less intense, and darker" %}
 
 When using a less opaque filament, a white or light colored filament for the background will be more forgiving.
 
@@ -73,7 +73,7 @@ With a wipe tower, the extruder will first be moved to the wipe tower area, then
 
 The tower is still very efficient for prints where the bottom layer(s) have a color change, since the wipe "tower" will only be two layers thick.
 
-{% include figure.html url="images/post/2023/multicolor/tower.jpg" description="Small Wipe Tower" alt="Gcode preview with short, rectangular wipe tower alongside part to be printed" %}
+{% include figure.html url="images/post/2023/multicolor/tower.jpg" description="Small wipe tower" alt="Gcode preview with short, rectangular wipe tower alongside part to be printed" %}
 
 ## Tip 4: Z-hop
 
