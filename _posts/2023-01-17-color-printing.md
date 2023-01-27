@@ -1,7 +1,7 @@
 ---
 title: Multicolor printing on single extruder printers
 excerpt: Manual filament swapping and you, tips and tricks. 
-tags: [arduino, 3d-printing]
+tags: [3d-printing, mmu]
 layout: post
 date: 2023-1-23 23:16 -0500
 comments: false
@@ -63,7 +63,7 @@ A small test print is recommended to make sure your colors will look OK at the l
 
 ## Tip 3: Use a wipe tower
 
-This actually servers two purposes. Obviously, it allows a reliable color change with configurable purge volumes without as much baby sitting while changing filament, but it also has another side effect.
+This actually serves two purposes. Obviously, it allows a reliable color change with configurable purge volumes without as much baby sitting while changing filament, but it also has another side effect.
 
 Without a wipe tower, the `m600` filament change event will take place when the extruder has completed the last object of that color for a layer, and when that's complete, the extruder will return to the last location, before moving on to the next object location.
 
