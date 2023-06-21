@@ -56,4 +56,20 @@ Add the correct proxy port:
 dokku proxy:ports-add homeassistant http:80:8123
 ```
 
+To enable autodiscovery, Home Assistant needs to be connected to the host network.
+
+You can enable this option in dokku with
+
+```sh
+dokku docker-options:add homeassistant deploy,run "--network=host"
+```
+
+Once Home Assistant is on the host network, dokku's zero-downtime restarts will fail when updating or restarting the service, because the bound port will already be in use.
+
+Zero downtime restarting can be disabled with
+
+```sh
+dokku checks:disable homeassistant
+```
+
 Currently, I'm just using this for print notifications for the BambuLab P1P (using [ha-bambulab](https://github.com/greghesp/ha-bambulab)), and to turn the integrated light off after printing, but I'm looking to extend some other ad-hoc automations I have set up as well.
