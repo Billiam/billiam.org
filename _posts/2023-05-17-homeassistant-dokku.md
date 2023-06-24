@@ -82,8 +82,10 @@ dokku git:from-image homeassistant ghcr.io/home-assistant/home-assistant@sha256:
 
 You can get this digest from docker hub for your architecture: [docker hub](https://hub.docker.com/r/homeassistant/home-assistant/tags?page=1&name=stable), or you can pull the image locally and use:
 
+{% raw %}
 ```sh
 docker inspect --format='{{index .RepoDigests 0}}' ghcr.io/home-assistant/home-assistant:stable
 ```
+{% endraw %}
 
 My favorite automations (so far) turn my printer's light off automatically after a print completes, and lets me know to open windows when the weather is cooler and less humid outside, and air quality is ok.
