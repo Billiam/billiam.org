@@ -56,7 +56,7 @@ Add the correct proxy port:
 dokku proxy:ports-add homeassistant http:80:8123
 ```
 
-To enable autodiscovery, Home Assistant needs to be connected to the host network.
+To enable autodiscovery, Home Assistant needs to be connected to the host network. Other than autodiscovery, I had no issues using the default network and normal port mapping.
 
 You can enable this option in dokku with
 
@@ -72,4 +72,18 @@ Zero downtime restarting can be disabled with
 dokku checks:disable homeassistant
 ```
 
-Currently, I'm just using this for print notifications for the BambuLab P1P (using [ha-bambulab](https://github.com/greghesp/ha-bambulab)), and to turn the integrated light off after printing, but I'm looking to extend some other ad-hoc automations I have set up as well.
+## Updating Home Assistant
+
+To update Home Assistant, use `git:from-image` again, pointing to the newest SHA digest for your architecture (instead of using the `:stable` tag)
+
+```sh
+dokku git:from-image homeassistant ghcr.io/home-assistant/home-assistant@sha256:<shadigest>
+```
+
+You can get this digest from docker hub for your architecture: [docker hub](https://hub.docker.com/r/homeassistant/home-assistant/tags?page=1&name=stable), or you can pull the image locally and use:
+
+```sh
+docker inspect --format='{{index .RepoDigests 0}}' ghcr.io/home-assistant/home-assistant:stable
+```
+
+My favorite automations (so far) turn my printer's light off automatically after a print completes, and lets me know to open windows when the weather is cooler and less humid outside, and air quality is ok.
