@@ -13,7 +13,6 @@
 
 {% include _navigation.html %}
 
-
 {% if page.image.feature %}
   {% assign header_page = page %}
   {% assign feature_class = "image-wrap-center" %}
@@ -46,6 +45,8 @@
     {% include _author-bio.html %}
   </div>
   <div id="index">
+    {% include _adbanner.html %}
+
     <h1>{{ page.title }}</h1>
     {% for post in site.posts %}  
     {% unless post.next %}

@@ -25,7 +25,6 @@
   {% endfor %}
 {% endif %}
 
-
 {% if header_page.image.feature %}
   <div class="image-wrap {{ feature_class }}">
   <img src=
@@ -46,6 +45,8 @@
     {% include _author-bio.html %}
   </div>
   <article class="page">
+    {% include _adbanner.html %}
+
     <h1>{{ page.title }}</h1>
     <div class="article-wrap">
       {{ content }}

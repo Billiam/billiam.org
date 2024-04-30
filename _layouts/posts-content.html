@@ -39,7 +39,10 @@
      {% endif %}
    </div>
    <article class="post">
-    <div class="headline-wrap">
+     {% if forloop.first %}
+       {% include _adbanner.html %}
+     {% endif %}
+     <div class="headline-wrap">
       {% if post.link %}
         <h1><a href="{{ post.link }}">{{ post.title }}</a></h1>
       {% else %}

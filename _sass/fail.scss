@@ -213,3 +213,22 @@ h1 {
     margin-bottom: 1.65rem;
   }
 }
+.ftf-dma-note- {
+  &content-wrapper {
+    position: relative;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  &header {
+    padding-right: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+.ftf-dma-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
