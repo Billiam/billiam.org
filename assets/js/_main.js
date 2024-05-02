@@ -60,3 +60,24 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 });
+
+// dma notice cookie
+$(document).ready(function() {
+  var cookieNameValue = "ftf-dma-notice=shown";
+  var note = $("#ftf-dma-note");
+  var noteCloseButton = $("#ftf-dma-close-btn");
+
+  if (noteCloseButton.length === 0) {
+    return;
+  }
+
+  if (document.cookie.indexOf(cookieNameValue) === -1) {
+    noteCloseButton.click(function() {
+      note.remove();
+      document.cookie = cookieNameValue + ";expires=" + new Date(Date.now() + 1000*60*60*24*365).toUTCString();
+    });
+    note.removeClass("d-wait");
+  } else {
+    note.remove();
+  }
+});
