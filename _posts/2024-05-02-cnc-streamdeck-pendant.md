@@ -11,9 +11,9 @@ I've shared this project in a few places, but like many other projects, I've neg
 
 I'm currently using CNCjs with my GRBL-based CNC, and while there are some [really](https://wiki.printnc.info/en/grbl/jog2k-controller-pendant) [nice](https://github.com/nickshl/SmartPendant) pendants out there for 32-bit grblHAL boards, the options for physical devices and interfaces for older 8 bit boards like mine, with CNCjs, are very limited.
 
-Previous to this, I was using another pendant I put together, https://github.com/Billiam/cncjs-pendant-keyboardreader, using a wireless keyboard.
+Previous to this, I was using another pendant I put together, [cncjs-pendant-keyboardreader](https://github.com/Billiam/cncjs-pendant-keyboardreader), using a wireless keyboard.
 
-This supports smooth jogging, and a handful of macros and preset actions, but with no visual feedback, it was difficult
+This supported smooth jogging, and a handful of macros and preset actions, but with no visual feedback, it was difficult
 to remember all of the commands and shortcuts.
 
 I found that if I hadn't used the machine in a while, I completely forgot which keys did what. Was it control or alt for faster jogging? How do you dismiss notifications or unpause a job? And so on.
@@ -24,7 +24,7 @@ The Streamdeck is interesting. At its heart, it's a single, self-contained LCD t
 
 Being self contained, you can send images in jpeg format to the device to populate the display, instead of treating it as an external monitor. This is great for my use, since I can continue to use a headless Raspberry Pi for performance.
 
-The result is the (creatively named) [cncjs-pendant-streamdeck](https://billiam.github.io/cncjs-pendant-streamdeck, an obsessively configurable frontend for CNCjs with these goals in mind. The included configuration is for a 3x5 Streamdeck, but it supports both the mini (2x3) and XL (4x8). I have not tested it with newer devices with secondary display areas, since I don't own one.
+The result is the (creatively named) [cncjs-pendant-streamdeck](https://billiam.github.io/cncjs-pendant-streamdeck), an obsessively configurable frontend for CNCjs with these goals in mind. The included configuration is for a 3x5 Streamdeck, but it supports both the mini (2x3) and XL (4x8). I have not tested it with newer devices with secondary display areas, since I don't own one.
 
 {% include figure.html url="images/post/2024/streamdeck/streamdeck.jpg" description="Streamdeck running cncjs-pendant-streamdeck" %}
 
@@ -43,6 +43,8 @@ Out of the box, it supports:
 * (Animated) gcode rendering and thumbnails
 
 It can be used with or without a physical Streamdeck, with nice, large buttons for use on a phone or tablet.
+
+{% include youtube.html id="frGhGimE0ME" %}
 
 {% include figure.html url="images/post/2024/streamdeck/web.gif" description="Web view of the cncjs-pendant-streamdeck interface" %}
 
