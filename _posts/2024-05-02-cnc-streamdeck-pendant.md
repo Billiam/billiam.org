@@ -5,6 +5,8 @@ date: 2024-05-01 16:30 -05:00
 comments: false
 share: false
 tags: [cnc, cncjs, streamdeck]
+image:
+  og_feature: post/2024/streamdeck/streamdeck.jpg
 ---
 
 I've shared this project in a few places, but like many other projects, I've neglected to add it to this blog.
