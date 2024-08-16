@@ -5,6 +5,7 @@ _site
 *.sublime-workspace
 codekit-config.json
 node_modules
+images/**/src/*
 `_asset_bundler_cache
 .bundle
 vendor
