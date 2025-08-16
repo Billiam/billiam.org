@@ -519,9 +519,15 @@ Axially constrained:
 Radially constrained:
 : yes
 
-## Box joint with half rounded tenons
+### Box joint with half rounded tenons
+
+<div class="image-row">
 
 {% include figure.html url="images/post/2025/joint/box-roundf.jpg" %}
+
+{% include figure.html url="images/post/2025/joint/box-roundr.jpg" %}
+
+</div>
 
 This joint uses contoured, half rounded tenons to compensate for the inside radius on the opposite side.
 It requires significantly more machining time since the tenon edges must be 3d surfaced, but has good glue contact area and low void volume.
@@ -547,7 +553,7 @@ Axially constrained:
 Radially constrained:
 : yes
 
-## Box joint with smaller rounding on tenons
+### Box joint with smaller rounding on tenons
 
 {% include figure.html url="images/post/2025/joint/box-round-smallf.jpg" %}
 
