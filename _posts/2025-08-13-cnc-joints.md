@@ -14,7 +14,7 @@ I've been experimenting with woodworking joinery that can be cut flat (without v
 
 {% include _toc.html %}
 
-For these tests, I modeled two 90-degree boards, 8 inches wide by ¾\" thick. These joints are primarily practical and non-decorative, and I've tried to keep the same or similar proportions for tongues.
+For these tests, I modeled two 90-degree boards, 8 inches wide by ¾\" thick. These joints are primarily practical and non-decorative, and I've tried to keep the same or similar proportions for tongues, except the finger joints. Most lapped/hidden joints can be mitered with a chamfer bit for an additional toolchange, but this wont affect glue and void volume significantly.
 
 The machining time is very subjective, but I'm estimating based on consumer grade (read: not stiff) CNC routers, using ¼\" and ⅛\" endmills. Times assume that boards are already planed to thickness and cut to length, and use a roughing pass followed by a lighter finishing pass.
 
