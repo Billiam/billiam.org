@@ -6,10 +6,9 @@ date: 2025-08-13 20:10:00 -0500
 comments: false
 share: false
 ---
+I've been experimenting with woodworking joinery that can be cut flat (without vertical workholding) on a CNC. There are lots of examples of these joints online, and I don't have any new ones to share, _but I did_ model and CAM a bunch of them to compare relative glue surface area and internal voids. Maybe that information is helpful to somebody.
 
 {% include _toc.html %}
-
-I've been experimenting with woodworking joinery that can be cut flat (without vertical workholding) on a CNC. There are lots of examples of these joints online, and I don't have any new ones to share, _but I did_ model and CAM a bunch of them to compare relative glue surface area and internal voids. Maybe that information is helpful to somebody.
 
 For these tests, I modeled two 90-degree boards, 8 inches wide by ¾\" thick. These joints are primarily practical and non-decorative, and I've tried to keep the same or similar proportions for tongues.
 
