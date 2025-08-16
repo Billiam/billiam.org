@@ -5,6 +5,10 @@ layout: post
 date: 2025-08-13 20:10:00 -0500
 comments: false
 share: false
+image:
+ feature: post/2025/joint/joint-banner.jpg
+ og_feature: post/2025/joint/joint-banner.jpg
+ thumb: post/2025/joint/joint-thumb.jpg
 ---
 I've been experimenting with woodworking joinery that can be cut flat (without vertical workholding) on a CNC. There are lots of examples of these joints online, and I don't have any new ones to share, _but I did_ model and CAM a bunch of them to compare relative glue surface area and internal voids. Maybe that information is helpful to somebody.
 
