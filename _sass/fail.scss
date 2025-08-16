@@ -232,3 +232,42 @@ h1 {
   right: 1rem;
   cursor: pointer;
 }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+dt {
+  font-family: $heading-font;
+  font-size: 1.1rem;
+  grid-column: 1;
+  font-weight: bold;
+
+}
+dd {
+  grid-column: 2;
+}
+
+.toc {
+  @media #{$large} {
+    top: unset;
+  }
+}
+
+.detail-table {
+  font-size: 0.8em;
+  font-family: sans-serif;
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  th {
+    text-align: left;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.image-row {
+  display: flex;
+}
