@@ -16,6 +16,10 @@ The machining time is very subjective, but I'm estimating based on consumer grad
 
 For the roughing pass, I'm simulating with a 2-flute endmill, 3mm stepdown, 0.14mm feed per tooth at 18,000 RPM. For the ⅛\" tool, where needed, I'm using 2mm stepdown, 0.1mm feed per tooth at 20,000 RPM.
 
+For alignment, I'm counting the number of directions that the joint _can't_ move when assembled, where higher is (probably)
+better. A butt joint is held in place in one direction. An open-sided rabbet joint is held in place in two directions.
+A dovetail joint is held in place in five directions.
+
 ## Butt joint
 
 {% include figure.html url="images/post/2025/joint/buttr.jpg" %}
@@ -38,11 +42,8 @@ Tool changes:
 Void volume: 
 : 0
 
-Axially constrained:
-: no
-
-Radially constrained:
-: no
+Alignment directions:
+: 1
 
 ## Mitered joint
 
@@ -65,18 +66,14 @@ Tool changes:
 Void volume:
 : 0
 
-Axially constrained:
-: no
-
-Radially constrained:
-: no
-
+Alignment directions:
+: 1
 
 ## Stepped "miter" joint
 
 {% include figure.html url="images/post/2025/joint/step-miterr.jpg" %}
 
-This joint is constructed with repeated, successfully deeper steps along the joint edge. It has no voids, and improves the glue surface area, and helps with assembly.
+This joint is constructed with repeated, successively deeper steps along the joint edge. It has no voids, improves the glue surface area, and helps a little with assembly depending on step size.
 
 Glue surface area:
 : 11.4 in²
@@ -93,17 +90,14 @@ Tool changes:
 Void volume:
 : 0
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: no
+Alignment directions:
+: 2
 
 ## Rabbet joint
 
 {% include figure.html url="images/post/2025/joint/dador.jpg" %}
 
-This joint is another one that can easily be cut on the table saw or router table. It provides a little more glue surface, and a positive stop axially for assembly.
+This joint is another one that can easily be cut on the table saw or router table. It provides a little more glue surface, and a little help with assembly.
 
 Glue surface area:
 : 9 in²
@@ -120,17 +114,15 @@ Tool changes:
 Void volume:
 : 0
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: no
+Alignment directions:
+: 2
 
 ## Tongue housing joint
 
 {% include figure.html url="images/post/2025/joint/groovef.jpg" %}
 
-This joint too can be cut on a table saw with a dado stack, or on a router table, but is also easy with a CNC. It does not prevent sliding but does otherwise lock the pieces together, and provides twice the glue surface of a butt joint.
+This joint too can be cut on a table saw with a dado stack, or on a router table, but is also easy with a CNC. It does not prevent sliding but does otherwise lock the pieces together, and provides twice the glue surface of a butt joint. To
+prevent sliding and improve alignment, the tongue and groove can stop before the board edge and appropriately dogboned.
 
 Glue surface area:
 : 12 in²
@@ -147,17 +139,15 @@ Tool changes:
 Void volume:
 : 0
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: no
+Alignment directions:
+: 3
 
 ## Hammer tenon
 
 {% include figure.html url="images/post/2025/joint/hammerf.jpg" %}
 
-The hammer tenon can be cut flat and provides axial and radial assembly help. It's a bit more complicated to design, and requires adding dogbones, which creates some void spaces in the joint.
+The hammer tenon can be cut flat and provides axial and radial assembly help. It's a bit more complicated to design, and requires adding dogbones, which creates some void spaces in the joint. Alignment and surface contact can be improved
+by using a smaller tool to reduce the dogbone size.
 
 Glue surface area:
 : 6.43 in²
@@ -174,11 +164,8 @@ Tool changes:
 Void volume:
 : 0.367 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 5
 
 ## Finger tenons
 
@@ -201,11 +188,8 @@ Tool changes:
 Void volume:
 : 0.53 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 3
 
 ## Blind finger tenons
 
@@ -235,11 +219,8 @@ Tool changes:
 Void volume:
 : 0.45 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ## Mortise and through tenon
 
@@ -263,11 +244,8 @@ Tool changes:
 Void volume:
 : 0.27 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 3
 
 ## Mortise and hidden tenon
 
@@ -296,15 +274,12 @@ Tool changes:
 Void volume:
 : 0.27 in³
 
-Axially constrained:
-: no
-
-Radially constrained:
-: yes
+Alignment directions:
+: 3
 
 ## Box joints
 
-The following box joints are all similar but use different methods for relieving the current radius in corners, resulting in differences in void space, gluing area, CAD effort and manufacturing time.
+The following box joints are all similar but use different methods for relieving the cutter radius in inside corners, resulting in differences in void space, gluing area, CAD effort and manufacturing time.
 
 ### Basic box joint
 
@@ -327,11 +302,8 @@ Tool changes:
 Void volume:
 : 0.09 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ### Box joint with smaller dogbones
 
@@ -354,11 +326,8 @@ Tool changes:
 Void volume:
 : 0.02 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ### Box joint with smaller perpendicular dogbones
 
@@ -381,11 +350,8 @@ Tool changes:
 Void volume:
 : 0.06 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ### Box joint with rabbets
 
@@ -414,11 +380,8 @@ Tool changes:
 Void volume:
 : 0.13 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ### Box joint with small rabbets
 
@@ -447,11 +410,8 @@ Tool changes:
 Void volume:
 : 0.03 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ### Box joint with rabbets and hidden tenons
 
@@ -480,11 +440,8 @@ Tool changes:
 Void volume:
 : 0.11 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ### Box joint with small rabbets and hidden tenons
 
@@ -513,11 +470,8 @@ Tool changes:
 Void volume:
 : 0.03 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ### Box joint with half rounded tenons
 
@@ -547,11 +501,8 @@ Tool changes:
 Void volume:
 : 0.04 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ### Box joint with smaller rounding on tenons
 
@@ -574,11 +525,8 @@ Tool changes:
 Void volume:
 : 0.01 in³
 
-Axially constrained:
-: yes
-
-Radially constrained:
-: yes
+Alignment directions:
+: 4
 
 ## Summary
 
@@ -586,27 +534,27 @@ For my needs, I'll probably be using a mix of the [tongue housing joint](#tongue
 
 <div class="detail-table" markdown="block">
 
-|Name|Glue Surface|Cad effort|Tool Changes|Machining time|Void volume|Axial|Radial|
+|Name|Glue Surface|Cad effort|Tool Changes|Machining time|Void volume|Align|
 |---|---|---|---|---|---|---|---|
-|[Butt](#butt-joint)|6 in²|None|0|0|0|n|n|
-|[Mitered](#mitered-joint)|8.49 in²|Min|0|0|0|n|n|
-|[Stepped](#stepped-miter-joint)|11.4 in²|Med|0|5m56s|0|y|n|
-|[Rabbet](#rabbet-joint)|9 in²|Min|0|2m11s|0|y|n|
-|[Tongue](#tongue-housing-joint)|12 in²|Min|0|2m26s|0|y|n
-|[Hammer](#hammer-tenon)|6.43 in²|High|0|6m13s|0.38 in³|y|y|
-|[Finger](#finger-tenons)|16.31 in²|Med|0|4m19s|0.53 in³|y|y|
-|[Blind finger](#blind-finger-tenons)|17.02 in²|Med|0|3m21s|0.45 in³|y|y|
-|[Mortise](#mortise-and-through-tenon)|7.81 in²|Med|0|8m55s|0.27 in³|y|y|
-|[Blind mortise](#mortise-and-hidden-tenon)|10.29 in²|Med|0|8m59s|0.27 in³|n|y|
-|[Box](#basic-box-joint)|6.44 in²|Low|0|4m47s|0.09 in³|y|y|
-|[Box small dogbone](#box-joint-with-smaller-dogbones)|8.14 in²|Low|1|5m24s|0.02 in³|y|y
-|[Perp dogbone](#box-joint-with-smaller-perpendicular-dogbones)|8.66 in²|Low|1|6m14s|0.06 in³|y|y|
-|[Rabbet](#box-joint-with-rabbets)|7.56 in²|High|0|5m43s|0.13 in³|y|y|
-|[Small rabbet](#box-joint-with-small-rabbets)|8.69 in²|High|1|5m22s|0.03 in³|y|y|
-|[Hidden rabbet](#box-joint-with-rabbets-and-hidden-tenons)|11.46 in²|High|0|5m01s|0.11 in³|y|y|
-|[Small hidden rabbet](#box-joint-with-small-rabbets-and-hidden-tenons)|12.62 in²|High|1|4m49s|0.03 in³|y|y|
-|[Rounded](#box-joint-with-half-rounded-tenons)|8.89 in²|Med|0|7m37s|0.04 in³|y|y|
-|[Small rounded](#box-joint-with-smaller-rounding-on-tenons)|9.54 in²|Med|1|6m41s|0.01 in³|y|y|
+|[Butt](#butt-joint)|6 in²|None|0|0|0|1|
+|[Mitered](#mitered-joint)|8.49 in²|Min|0|0|0|1|
+|[Stepped](#stepped-miter-joint)|11.4 in²|Med|0|5m56s|0|2|
+|[Rabbet](#rabbet-joint)|9 in²|Min|0|2m11s|0|2|
+|[Tongue](#tongue-housing-joint)|12 in²|Min|0|2m26s|0|3|
+|[Hammer](#hammer-tenon)|6.43 in²|High|0|6m13s|0.38 in³|5|
+|[Finger](#finger-tenons)|16.31 in²|Med|0|4m19s|0.53 in³|3|
+|[Blind finger](#blind-finger-tenons)|17.02 in²|Med|0|3m21s|0.45 in³|4|
+|[Mortise](#mortise-and-through-tenon)|7.81 in²|Med|0|8m55s|0.27 in³|3|
+|[Blind mortise](#mortise-and-hidden-tenon)|10.29 in²|Med|0|8m59s|0.27 in³|3|
+|[Box](#basic-box-joint)|6.44 in²|Low|0|4m47s|0.09 in³|4|
+|[Box small dogbone](#box-joint-with-smaller-dogbones)|8.14 in²|Low|1|5m24s|0.02 in³|4|
+|[Perp dogbone](#box-joint-with-smaller-perpendicular-dogbones)|8.66 in²|Low|1|6m14s|0.06 in³|4|
+|[Rabbet box](#box-joint-with-rabbets)|7.56 in²|High|0|5m43s|0.13 in³|4|
+|[Small rabbet box](#box-joint-with-small-rabbets)|8.69 in²|High|1|5m22s|0.03 in³|4|
+|[Hidden rabbet box](#box-joint-with-rabbets-and-hidden-tenons)|11.46 in²|High|0|5m01s|0.11 in³|4|
+|[Small hidden rabbet box](#box-joint-with-small-rabbets-and-hidden-tenons)|12.62 in²|High|1|4m49s|0.03 in³|4|
+|[Rounded box](#box-joint-with-half-rounded-tenons)|8.89 in²|Med|0|7m37s|0.04 in³|4|
+|[Small rounded box](#box-joint-with-smaller-rounding-on-tenons)|9.54 in²|Med|1|6m41s|0.01 in³|4|
 
 
 </div>
