@@ -29,7 +29,7 @@ A dovetail joint is held in place in five directions.
 {% include figure.html url="images/post/2025/joint/buttr.jpg" %}
 
 The most basic joint is a simple butt joint and supplies the baseline for
-gluable area. In this case, 6 square inches. It provides no help in assembly, since the boards can slide past each other or slide sideways. I'm going to call those axial and radial directions, but I think I'm using the wrong vocabulary here. Oh well!
+gluable area. In this case, 6 square inches. It provides no help in assembly, since the boards can slide past each other or slide sideways.
 
 Glue surface area:
 : 6 in²
@@ -368,6 +368,9 @@ Alignment directions:
 </div>
 
 Instead of dogbones, this design uses rabbets at the corners of the tenons. It takes more work in CAD, as the box tenons need to be created in addition to the rabbets.
+
+Credit goes to [mosquitomade](https://blog.mosquitomade.com/woodworking/blind-box-joints-my-cnc-approach-video/) for
+this method.
 
 Glue surface area:
 : 7.56 in²
